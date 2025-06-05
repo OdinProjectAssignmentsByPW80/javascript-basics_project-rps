@@ -76,5 +76,6 @@ at the end in a separate section
 
 ## Results
 
-*coming soon*
-<!-- ![screen shot of result](./img/results.png) -->
+Final page can be viewed live [here &rArr;](https://odinprojectassignmentsbypw80.github.io/javascript-basics_project-rps/). The prompts will start before you have a chance to open the console, however, pressing <kbd>F12</kbd> still works.
+
+![screen shot of result](./img/results.png)
