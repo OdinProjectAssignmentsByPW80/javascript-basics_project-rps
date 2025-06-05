@@ -1,8 +1,15 @@
+/**
+ * Script to play a five round game of paper rock scissors between the computer
+ * and a human player in the console of a browser.
+ * Uses `prompt()` without error checking to get user input.
+ */
+
 "use strict";
 
 /* #region  MAIN */
 
-const choices = ["ROCK", "PAPER", "SCISSORS"];
+let playerScore = 0;
+let computerScore = 0;
 
 /**
  * Generate a random choice for the computer.
@@ -23,22 +30,97 @@ function getPlayerChoice() {
 
 /**
  * Plays a single round of paper rock scissors between the computer and player.
- * @returns {Array<int, int, string>} Contains the computers choice as an int,
- * the players choice as an int and a string describing the result of the round.
+ * @returns {string>} describes the result of the round.
  */
 function playRound() {
   const computerChoice = getComputerChoice();
   const playerChoice = getPlayerChoice();
+  printChoices(playerChoice, computerChoice);
   if (playerChoice == computerChoice) {
-    return [computerChoice, playerChoice, "Draw"];
+    return "Result: Draw";
   }
   let playerWon = playerChoice > computerChoice;
   if (playerChoice == 0 && computerChoice == 2) playerWon = !playerWon;
-  return [
-    computerChoice,
-    playerChoice,
-    playerWon ? "Player Won" : "Player Lost",
-  ];
+  if (playerWon) playerScore++;
+  else computerScore++;
+  return playerWon ? "Result: Player Won" : "Result: Player Lost";
+}
+
+/**
+ * Plays a five round game of paper rock scissors between the computer and
+ * player.
+ */
+function playGame() {
+  welcomePlayer();
+  for (let rounds = 1; rounds < 6; rounds++) {
+    console.log("Round:", rounds);
+    console.log(playRound());
+    printScore();
+  }
+  summariseGame();
+}
+
+playGame();
+
+/* #endregion */
+
+/* #region  MESSAGE HANDLING */
+
+/**
+ * Prints a welcome message to the console.
+ */
+function welcomePlayer() {
+  console.log(
+    "== Welcome to Paper, Rock Scissors ==\n" +
+      "\n" +
+      "The game consists of five rounds, will prompt you for input and keep " +
+      "track of your score as you progress.\n" +
+      "Let's begin...\n"
+  );
+}
+
+/**
+ * Prints the player and computer choice to the console.
+ * @param {int} player index of choice is choices[].
+ * @param {int} computer index of choice is choices[].
+ */
+function printChoices(player, computer) {
+  const choices = ["ROCK", "PAPER", "SCISSORS"];
+  console.log(
+    "Player Chose: " +
+      choices[player] +
+      " VS " +
+      "Computer Chose: " +
+      choices[computer]
+  );
+}
+
+/**
+ * Prints current score to the console.
+ */
+function printScore() {
+  console.log(
+    "|   - Player -   |  - Computer -  |\n" +
+      "|----------------|----------------|\n" +
+      "|       0" +
+      playerScore +
+      "       |        0" +
+      computerScore +
+      "      |\n"
+  );
+}
+
+/**
+ * Prints a summary of the game to the console.
+ */
+function summariseGame() {
+  console.log(
+    playerScore > computerScore
+      ? "Congratulations You Won! ☺️\n"
+      : "Sorry, Better luck next time. 😞\n"
+  );
+  console.log("Final Score:");
+  printScore();
 }
 
 /* #endregion */
