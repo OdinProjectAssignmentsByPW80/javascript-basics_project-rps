@@ -16,41 +16,63 @@ a solution.
 
 However, of note are the following sections:
 
-<ul>
-<li>
+<table>
+<tr>
+<td>
 
-in **Step 3: Write the logic to get the human choice** -
+in **Step 3: Write the logic to get the human choice**
+
+</td>
+<td>
 
 > - Use the prompt method to get the user’s input.
 > - You do not need to handle re-prompting if the user enters an invalid input ... just assume the user will always enter a valid choice.
 
-</li>
-<br>
-<li>
+</td>
+</tr>
+<tr>
+<td>
 
-in **Step 4: Declare the players score variables** -
+in **Step 4: Declare the players score variables**
 
-> The game will keep track of the players score.
 
-</li>
-<br>
-<li>
+</td>
+<td>
 
-in **Step 6: Write the logic to play the entire game** -
+> - The game will keep track of the players score.
 
-> The game will play 5 rounds.
+</td>
+</tr>
+<tr>
+<td>
 
-</li>
-<br>
-<li>
+in **Step 6: Write the logic to play the entire game**
 
-at the end in a separate section -
+
+</td>
+<td>
+
+> - The game will play 5 rounds.
+
+</td>
+</tr>
+<tr>
+<td>
+
+at the end in a separate section
+
+
+</td>
+<td>
 
 > [!WARNING]
-> When making interactive projects, like this one, you might be tempted to add more features, improve interactivity, user experience, design and styling of your website, and so on. We recommend not doing that, and saving this effort for your portfolio projects.
+> When making interactive projects, like this one, you might be tempted to add more features, improve interactivity, user experience, design and styling of your website, and so on.
+>
+> We recommend not doing that, and saving this effort for your portfolio projects.
 
-</li>
-</ul>
+</td>
+</tr>
+</table>
 
 ## Results
 
