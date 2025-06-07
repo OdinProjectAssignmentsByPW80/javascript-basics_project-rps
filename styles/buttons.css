@@ -6,8 +6,8 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: min(10vw, 10vh);
+  line-height: min(10vw, 10vh);
   text-align: center;
   font-weight: 900;
 }
