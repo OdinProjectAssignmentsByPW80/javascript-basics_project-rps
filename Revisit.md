@@ -15,8 +15,4 @@ a solution while leveraging git branches.
 
 ## Results
 
-*coming soon*
-
-<!-- Final page can be viewed live [here &rArr;](https://odinprojectassignmentsbypw80.github.io/javascript-basics_project-rps/).
-
-![screen shot of result](./img/readme/results.png) -->
+Final page can be viewed live [here &rArr;](https://odinprojectassignmentsbypw80.github.io/javascript-basics_project-rps/).
