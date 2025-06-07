@@ -19,3 +19,7 @@ Full details [available here &rArr;](./Initial.md)
 The revision added a ui to the project allowing the game to be played directly in the browser, rather than the console.
 
 Full details [available here &rArr;](./Revisit.md)
+
+### ToDo
+
+- fix result layout in landscape
