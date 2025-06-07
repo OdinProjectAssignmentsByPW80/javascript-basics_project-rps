@@ -1,0 +1,16 @@
+#results {
+  visibility: hidden;
+  box-sizing: border-box;
+  padding: min(15vh, 15vw);
+  position: absolute;
+  z-index: 5;
+  width: 70%;
+  height: 70%;
+  background-color: rgb(248, 181, 57);
+  box-shadow: 5px 5px 5px #888888;
+}
+
+#result-done:hover {
+  background-color: black;
+  color: white;
+}
