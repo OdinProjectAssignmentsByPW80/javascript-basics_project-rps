@@ -1,0 +1,29 @@
+button {
+  height: min(15vw, 15vh);
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+button:hover {
+  background-color: rgb(248, 181, 57);
+}
+
+#r-btn {
+  background-image: url(../img/rock.svg);
+}
+
+#p-btn {
+  background-image: url(../img/paper.svg);
+}
+
+#s-btn {
+  background-image: url(../img/scissors.svg);
+}

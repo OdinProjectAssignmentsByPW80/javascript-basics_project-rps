@@ -1,0 +1,15 @@
+html {
+  font-family: "Roboto Mono", monospace;
+  font-size: 14pt;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.large-text {
+  font-size: 2em;
+}

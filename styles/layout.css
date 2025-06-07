@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 15vh 15vw;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+.centred {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.end {
+  justify-content: end;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.gap {
+  gap: 15%;
+}
+
+#player-container,
+#cpu-container {
+  width: 300px;
+}

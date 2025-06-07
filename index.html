@@ -9,34 +9,40 @@
         Project: Rock, Paper, Scissors
     </title>
 
-    <style>
-        kbd {
-            background-color: #eee;
-            border-radius: 3px;
-            border: 1px solid #b4b4b4;
-            box-shadow:
-                0 1px 1px rgba(0, 0, 0, 0.2),
-                0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-            color: #333;
-            display: inline-block;
-            font-size: 0.85em;
-            font-weight: 700;
-            line-height: 1;
-            padding: 2px 4px;
-            white-space: nowrap;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/rps-style.css">
 </head>
 
-<body>
+<body class="flex column">
 
-    <h1>
+    <h1 id="title" class="centred">
         Project: Rock, Paper, Scissors
     </h1>
-    <p>Press <kbd>F12</kbd> to play <strong>Rock, Paper, Scissors</strong> in the console...</p>
-    <p>(It still works even with the pop-up)</p>
 
-    <script src="rps-script.js" defer></script>
+    <div id="score-container" class="centred">
+        <h2 id="score-title" class="large-text">Score</h2>
+        <div id="score-board" class="centred flex gap">
+            <div id="player-container">
+                <p id="player-label">Player</p>
+                <p id="player-score" class="large-text">0</p>
+            </div>
+            <div id="cpu-container">
+                <p id="cpu-label">Computer</p>
+                <p id="cpu-score" class="large-text">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="btn-container" class="centred flex full-width">
+        <button id="r-btn" title="Press to choose rock"></button>
+        <button id="p-btn" title="Press to choose paper"></button>
+        <button id="s-btn" title="Press to choose scissors"></button>
+    </div>
+
+    <div id="reset-container" class="centred flex end full-width">
+        <button id="reset-btn" title="Press to reset the score">⟲</button>
+    </div>
+
+    <!-- <script src="rps-script.js" defer></script> -->
 
 </body>
 
