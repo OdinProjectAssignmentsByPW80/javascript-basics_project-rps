@@ -60,9 +60,23 @@ function playGame() {
   summariseGame();
 }
 
-playGame();
+// playGame();
 
 /* #endregion */
+
+const rBtn = document.querySelector("#r-btn");
+const pBtn = document.querySelector("#p-btn");
+const sBtn = document.querySelector("#s-btn");
+const resetBtn = document.querySelector("#reset-btn");
+
+function testButton() {
+  console.log("Button Pressed");
+}
+
+rBtn.addEventListener("click", testButton);
+pBtn.addEventListener("click", testButton);
+sBtn.addEventListener("click", testButton);
+resetBtn.addEventListener("click", testButton);
 
 /* #region  MESSAGE HANDLING */
 
