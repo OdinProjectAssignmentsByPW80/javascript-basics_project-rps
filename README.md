@@ -12,10 +12,10 @@ Completed as part of the **JavaScript Basics** section of the **Foundation Cours
 The initial version used JavaScript to create a game of **Rock, Paper, Scissors** that was played entirely in the
 browser console.
 
-Full details [available here &aArr;](./Initial.md)
+Full details [available here &rArr;](./Initial.md)
 
 ## Revised Version
 
 The revision added a ui to the project allowing the game to be played directly in the browser, rather than the console.
 
-Full details [available here &aArr;](./Revisit.md)
+Full details [available here &rArr;](./Revisit.md)
