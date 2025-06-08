@@ -1,7 +1,7 @@
 #results {
   visibility: hidden;
   box-sizing: border-box;
-  padding: min(15vh, 15vw);
+  padding: min(5vh, 15vw);
   position: absolute;
   z-index: 5;
   width: 70%;
@@ -13,4 +13,10 @@
 #result-done:hover {
   background-color: black;
   color: white;
+}
+
+#results img {
+  height: min(15vh, 15vw);
+  width: auto;
+  margin-top: 5vh;
 }
