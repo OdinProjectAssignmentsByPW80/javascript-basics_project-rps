@@ -16,6 +16,14 @@ button:hover {
   background-color: rgb(248, 181, 57);
 }
 
+button > p {
+  display: inline-block;
+  line-height: min(7.4vw, 7.4vh);
+  padding-bottom: min(0.7vw, 0.7vh);
+  margin-bottom: min(1vw, 1vh);
+  margin-right: min(1vw, 1vh);
+}
+
 #r-btn {
   background-image: url(../img/rock.svg);
 }
