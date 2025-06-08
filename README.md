@@ -20,6 +20,3 @@ The revision added a ui to the project allowing the game to be played directly i
 
 Full details [available here &rArr;](./Revisit.md)
 
-### ToDo
-
-- fix result layout in landscape
