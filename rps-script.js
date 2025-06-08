@@ -49,7 +49,7 @@ function playRound(playerChoice) {
   const computerChoice = getComputerChoice();
   let result;
   if (playerChoice == computerChoice) {
-    result = "Result: Draw";
+    result = "Result: <strong>Draw</strong>";
   } else {
     let playerWon = playerChoice > computerChoice;
     if (
@@ -60,7 +60,9 @@ function playRound(playerChoice) {
     }
     if (playerWon) incrementScore(playerScoreDisplay);
     else incrementScore(cpuScoreDisplay);
-    result = playerWon ? "Result: Player Won" : "Result: Player Lost";
+    result = playerWon
+      ? "Result: <strong>Player Won<strong>"
+      : "Result: <strong>Player Lost<strong>";
   }
   displayResult([playerChoice, computerChoice, result]);
 }
